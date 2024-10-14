@@ -1,0 +1,49 @@
+$schema: "1.0"
+name: dhruvdef-winget
+image: MicrosoftWindowsDesktop_windows-ent-cpc_win11-24h2-ent-cpc-m365
+                                                         
+tasks:
+    - name: powershell
+      parameters:
+        command:  wsl --install
+
+    - name: winget
+      parameters:
+        package:  Docker.DockerDesktop
+
+    - name: winget
+      parameters:
+        package:  Microsoft.PowerToys
+
+    - name: winget
+      parameters:
+        package:  Microsoft.VisualStudioCode
+
+    - name: winget
+      parameters:
+        package:  Microsoft.AzureCLI
+
+    - name: winget
+      parameters:
+        package:  OpenJS.NodeJS
+        version: 16.18.0
+
+    - name: winget
+      parameters:
+        package:  7zip.7zip
+
+    - name: winget
+      parameters:
+        package:  Google.Chrome
+
+    - name: winget
+      parameters:
+        package:  GitHub.GitHub
+
+    - name: winget
+      parameters:
+        package:  Python.Python.3.11
+
+    - name: winget
+      parameters:
+        package:  Microsoft.WindowsTerminal
