@@ -42,7 +42,7 @@ tasks:
 
     - name: winget
       parameters:
-        package:  Python.Python.3.11
+        package:  Python.Python.3.12
 
     - name: winget
       parameters:
