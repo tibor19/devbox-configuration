@@ -5,7 +5,7 @@ image: MicrosoftWindowsDesktop_windows-ent-cpc_win11-25h2-ent-cpc-m365
 tasks:
     - name: powershell
       parameters:
-        command:  wsl --install -d Ubuntu -c
+        command:  wsl --install --distribution Ubuntu --no-launch
 
     - name: winget
       parameters:
