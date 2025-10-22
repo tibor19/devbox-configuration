@@ -17,7 +17,7 @@ tasks:
       description: Install Ubuntu 24.04 LTS
       parameters:
         package: Microsoft.WSL
-        runAs: true
+        runAsUser: true
 
     - name: winget
       description: Install Ubuntu 24.04 LTS
