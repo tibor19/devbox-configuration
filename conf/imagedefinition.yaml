@@ -3,10 +3,15 @@ name: dhruvdef-winget
 image: MicrosoftWindowsDesktop_windows-ent-cpc_win11-25h2-ent-cpc-m365
 
 tasks:
+    - name: winget
+      description: Install pwsh
+      parameters:
+        package: Microsoft.PowerShell
+
     - name: powershell
       description: Install Windows Subsystem for Linux
       parameters:
-        command: dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all
+        command: dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /Quiet /all
 
     - name: powershell
       description: Install Windows Subsystem for Linux
