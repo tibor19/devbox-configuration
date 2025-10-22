@@ -3,11 +3,6 @@ name: dhruvdef-winget
 image: MicrosoftWindowsDesktop_windows-ent-cpc_win11-25h2-ent-cpc-m365
 
 tasks:
-    - name: winget
-      description: Install pwsh
-      parameters:
-        package: Microsoft.PowerShell
-
     - name: powershell
       description: Install Windows Subsystem for Linux
       parameters:
@@ -17,6 +12,12 @@ tasks:
       description: Install Windows Subsystem for Linux
       parameters:
         command: wsl --install --web-download --distribution Ubuntu-24.04 --no-launch
+
+    - name: winget
+      description: Install Ubuntu 24.04 LTS
+      parameters:
+        package: Microsoft.WSL
+        runAs: true
 
     - name: winget
       description: Install Ubuntu 24.04 LTS
