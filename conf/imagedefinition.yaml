@@ -76,7 +76,7 @@ tasks:
     - name: winget
       description: Install azd
       parameters:
-        package:  Microsoft.Azure.ADZ
+        package:  Microsoft.Azd
 
     - name: winget
       description: Install 7zip
