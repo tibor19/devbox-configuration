@@ -8,17 +8,6 @@ tasks:
       parameters:
         command: dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /Quiet /all
 
-    - name: powershell
-      description: Install Windows Subsystem for Linux
-      parameters:
-        command: wsl --install --web-download --distribution Ubuntu-24.04 --no-launch
-
-    - name: winget
-      description: Install Ubuntu 24.04 LTS
-      parameters:
-        package: Microsoft.WSL
-        runAsUser: true
-
     - name: winget
       description: Install Ubuntu 24.04 LTS
       parameters:
